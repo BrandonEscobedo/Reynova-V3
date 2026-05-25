@@ -178,7 +178,7 @@ exports.enviarCotizacionPorCorreo = functions.https.onRequest(
                     fechaEntrega: cotizacionDataSerialized.fechaEntregaEstimado
                         ? String(cotizacionDataSerialized.fechaEntregaEstimado)
                         : null,
-                    linkPublico: `${process.env.APP_URL || "http://localhost:5173"}/cotizacion/${cotizacionId}`,
+                    linkPublico: `${"https://brandonescobedo.github.io/Reynova-V3   "}/cotizacion/${cotizacionId}`,
                     timestamp: new Date().toISOString(),
                     productosHtml: productosHtml,
                 };

@@ -16,7 +16,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -27,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/SamoVg/ProyectoIntegrador_1_Trok/issues"
   },
-  "homepage": "https://github.com/SamoVg/ProyectoIntegrador_1_Trok#readme"
+  "homepage": "https://brandonescobedo.github.io/Reynova-V3/",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
