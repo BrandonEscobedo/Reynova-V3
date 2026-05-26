@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reynova</title>
+    <script>
+      (function () {
+        var repoBase = "/Reynova-V3";
+        var path = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
+
+        if (path.indexOf(repoBase) === 0) {
+          path = path.slice(repoBase.length) || "/";
+        }
+
+        var target = repoBase + "/?redirect=" + encodeURIComponent(path + search + hash);
+        window.location.replace(target);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
